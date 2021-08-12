@@ -36,24 +36,15 @@ public class lgn extends javax.swing.JFrame {
 
     public static Connection connection = null;
 
-    public String Host = "sql11.freemysqlhosting.net",
-            dbName = "sql11422997",
-            tName = "Users",
-            dbUsername = "sql11422997",
-            dbPassword = "2yWXfclRIe";
+    public String Host = "*",
+            dbName = "*",
+            tName = "*",
+            dbUsername = "*",
+            dbPassword = "*";
 
     /**
-     * Server: sql11.freemysqlhosting.net Name: sql11422997 Username:
-     * sql11422997 Password: 2yWXfclRIe Port number: 3306
      */
     public void tryConnection() {
-        //Non funziona
-        //L'idea è quella di colorare il pallino di rosso se il database è offline e di verde se invece è online
-        //Ho fatto che se riesce a fare la connessione diventa verde, poi si chiude
-        //E se non riesce va nel catch e diventa rosso, poi prova a chiuderlo e darà errore ma non ci interessa
-        //Semplicemente il programma va in stallo se il server è offline
-
-        //Se il server è on funziona :D
         try {
             connection = DriverManager.getConnection("jdbc:mysql://" + Host + "/" + dbName + "?user=" + dbUsername + "&password=" + dbPassword);
             //connection = DriverManager.getConnection("jdbc:mysql://       IP   /     NAME     ?user=       USER       &password=      PWD    ");
