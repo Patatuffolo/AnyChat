@@ -227,7 +227,7 @@ public class registerpage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void setData(String nome1, String cognome1, String username1, String password1, String codiceFiscale) throws SQLException {
-        Connection connection = DriverManager.getConnection("jdbc:mysql://192.168.64.2/Users?user=Patatuffolo&password=Ih]aa4kpeAB2*MF!");
+        Connection connection = DriverManager.getConnection("*");
         Statement st = connection.createStatement();
         st.executeUpdate("INSERT INTO Users (Nome, Cognome, Username, Password, CodiceFiscale) VALUES" + "('" + nome1 + "', '" + cognome1 + "', '" + username1 + "', '" + password1 + "', '" + codiceFiscale + "')");
         System.out.println("Sussesfully");
