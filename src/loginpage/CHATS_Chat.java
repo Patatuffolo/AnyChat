@@ -37,12 +37,11 @@ public class CHATS_Chat extends javax.swing.JFrame {
     int result;
     boolean a = true;
     int i = 0;
-    public String Host = "sql11.freemysqlhosting.net",
-                  dbName = "sql11422997",
-                  //tName = "Users",
-                  dbUsername = "sql11422997",
-                  dbPassword = "2yWXfclRIe";
-
+    public String Host = "*",
+                  dbName = "*",
+                  //tName = "*",
+                  dbUsername = "*",
+                  dbPassword = "*";
     public CHATS_Chat() {
         initComponents();
         try {
