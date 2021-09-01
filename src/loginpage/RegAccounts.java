@@ -27,10 +27,9 @@ public class RegAccounts extends javax.swing.JFrame {
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setTitle("Registered Accounts... (Admin Page)");
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://192.168.64.2/Users?user=Patatuffolo&password=Ih]aa4kpeAB2*MF!");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://*/*?user=*&password=*");
             PreparedStatement statement = connection.prepareStatement("SELECT * FROM Users");
             ResultSet results = statement.executeQuery();
-            //Ih]aa4kpeAB2*MF!
             while (results.next()) {
                 String p1 = null;
                 int id = results.getInt(1);
